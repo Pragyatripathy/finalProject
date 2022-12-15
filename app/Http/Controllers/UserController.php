@@ -117,7 +117,7 @@ class UserController extends Controller
     public function logOut(Request $request)
     {
         $request->session()->flush();
-        return redirect('/tools')->with('message', 'Successfully logged out');
+        return redirect('/')->with('message', 'Successfully logged out');
     }
 
     /**
